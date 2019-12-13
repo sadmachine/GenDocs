@@ -143,6 +143,13 @@ h2 .ver {color: lightgray; font-size: 80%;}
     border: none;
     vertical-align: text-top;
 }
+
+.methodShort table.info tr.param {
+		background-color: #E2E2E2;
+}
+.methodShort table.info tr.param:nth-child(even) {
+		background-color: #F0F0F0;
+}
 .methodShort:target { /* non-essential, but helpful if it works */
     border-color: black;
 }

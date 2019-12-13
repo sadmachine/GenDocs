@@ -59,7 +59,7 @@ ReadChunk(file, lib, beg_indent)
 			throw Exception("Line with wrong indentation!")
 		else if StrStartsWith(tline, "@")
 			ent["attr_" SubStr(tline,2)] := 1
-		else if tline = End of class
+		else if InStr(tline, "End of class")
 			type := "EndClass"
 		else if RegExMatch(line, "^" beg_indent "(\s+)([a-zA-Z]+):\s*(.*)$", o)
 		{

@@ -342,6 +342,7 @@ GenerateShort_Constructor(ByRef filetext, item, prefix)
 
 GenerateShort_Common(ByRef filetext, item, prefix)
 {
+	lastset := false
 	type := item.type
 	Parse_Common(item, prefix, type, syntax, name, isConstr, isGet, isSet)
 	name2 := SubStr(name, StrLen(prefix)+1)
@@ -365,21 +366,41 @@ GenerateShort_Common(ByRef filetext, item, prefix)
 				pname := RTrim(SubStr(A_LoopField, 1, pos-1))
 				pval := LTrim(SubStr(A_LoopField, pos+1))
 				StringReplace, pval, pval, `r, `n, All
-				filetext .= "`n<tr><td width=""15%"">" pname "</td><td width=""85%"">" Markdown2HTML(pval,1) "</td></tr>"
+				filetext .= "`n<tr class=""param""><td width=""15%"">" pname "</td><td width=""85%"">" Markdown2HTML(pval,1) "</td></tr>"
 			}
+			lastset := true
 		}
-		if q := item.returns
+		if q := item.returns {
+			if lastset
+				filetext .= "`n<tr><td colspan='2'><hr/></td></tr>"
 			filetext .= "`n  <tr><td width=""15%""><strong>Returns</strong></td><td width=""85%"">" Markdown2HTML(q,1) "</td></tr>"
-		if q := item.throws
+			lastset := true
+		}
+		if q := item.throws {
+			if lastset
+				filetext .= "`n<tr><td colspan='2'><hr/></td></tr>"
 			filetext .= "`n  <tr><td width=""15%""><strong>Throws</strong></td><td width=""85%"">" Markdown2HTML(q,1) "</td></tr>"
+			lastset := true
+		}
 		filetext .= "`n</table>"
 	}
-	if item.remarks
+	if item.remarks {
+		if lastset
+			filetext .= "`n<hr/>"
 		filetext .= "`n" Markdown2HTML(item.remarks)
-	if item.extra
+		lastset := true
+	}
+	if item.extra {
+		if lastset
+			filetext .= "`n<hr/>"
 		filetext .= "`n" PrepPage(item.extra)
-	if item.example
+		lastset := true
+	}
+	if item.example {
+		if lastset
+			filetext .= "`n<hr/>"
 		filetext .= "`n" PrepExample(item.example)
+	}
 	filetext .= "`n</div>"
 }
 
