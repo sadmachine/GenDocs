@@ -8,14 +8,14 @@ GenDocs is a utility for easily creating documentation for AutoHotkey libraries.
 
 GenDocs+ is a fork of GenDocs which will hopefully add some additional features to make documentation of AutoHotKey libraries even easier and more convenient. It is intended to expand on the great work done by **fincs**.
 
-Original Features
------------------
+Original Features (by **fincs**)
+--------------------------------
 
 - Functions
 - Pages
 - Classes
 	- Constructors
-    - Methods
+  - Methods
 	- Properties
 	- Inner classes
 
@@ -26,10 +26,12 @@ Added Features (Ongoing)
 - [ ] Ability to parse specified `#Include`ed files 
 - [ ] Choice of destination folder for the generated documentation files
 
-Syntax
-------
+Syntax/Usage
+------------
 
-See Demo/TestLib.ahk to get a grasp of the syntax (TODO: document more thoroughly).
+For usage, see [usage.md].
+
+For a full syntax example, see [/Demo/TestLib.ahk] and the other files in `/Demo`.
 
 GenDocs-flavored Markdown
 -------------------------
