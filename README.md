@@ -1,13 +1,15 @@
-GenDocs v3.0-alpha003
-=====================
+GenDocs+ v0.1-alpha (A fork of GenDocs v3.0-alpha003)
+=====================================================
 
 Introduction
 ------------
 
-GenDocs is a utility for easily creating documentation for AutoHotkey libraries.
+GenDocs is a utility for easily creating documentation for AutoHotkey libraries. It was created by **fincs** and the original repository can be found [here](https://github.com/fincs/GenDocs). 
 
-Features
---------
+GenDocs+ is a fork of GenDocs which will hopefully add some additional features to make documentation of AutoHotKey libraries even easier and more convenient. It is intended to expand on the great work done by **fincs**.
+
+Original Features
+-----------------
 
 - Functions
 - Pages
@@ -16,6 +18,13 @@ Features
     - Methods
 	- Properties
 	- Inner classes
+
+Added Features (Ongoing)
+------------------------
+
+- [ ] Better documentation of syntax that GenDocs expects
+- [ ] Ability to parse specified `#Include`ed files 
+- [ ] Choice of destination folder for the generated documentation files
 
 Syntax
 ------
@@ -40,9 +49,3 @@ GenDocs uses a stripped down version of Markdown, which supports:
 - **Links**: `[Link text](Link URL)`. Equivalent to HTML `<a href="...">...</a>`.
 - **Images**: `![Image ALT text](Image file name)`. Equivalent to HTML `<img src="..." alt="..."/>`.
 
-Todo list
----------
-
-- "Related" section support
-- Better AutoHotkey code comment highlighter
-- CHM generation
