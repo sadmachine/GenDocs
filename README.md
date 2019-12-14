@@ -15,7 +15,7 @@ Original Features (by **fincs**)
 - Pages
 - Classes
 	+ Constructors
-  + Methods
+	+ Methods
 	+ Properties
 	+ Inner classes
 
