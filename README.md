@@ -29,9 +29,9 @@ Added Features (Ongoing)
 Syntax/Usage
 ------------
 
-For usage, see [/usage.md].
+For usage, see [/usage.md](/usage.md).
 
-For a full syntax example, see [/Demo/TestLib.ahk] and the other files in `/Demo`.
+For a full syntax example, see [/Demo/TestLib.ahk](/Demo/TestLib.ahk) and the other files in `/Demo`.
 
 GenDocs-flavored Markdown
 -------------------------
