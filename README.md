@@ -14,10 +14,10 @@ Original Features (by **fincs**)
 - Functions
 - Pages
 - Classes
-	- Constructors
-  - Methods
-	- Properties
-	- Inner classes
+	+ Constructors
+  + Methods
+	+ Properties
+	+ Inner classes
 
 Added Features (Ongoing)
 ------------------------
