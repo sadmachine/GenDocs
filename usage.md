@@ -65,14 +65,22 @@ For documenting functions
 
 ### Classes
 
-Class documentation
+*In progress...*
 
 #### Constructors
 
-Constructor documentation
+*In progress...*
 
 #### Methods
 
-Method documentation
+*In progress...*
+
+#### Properties
+
+*In progress...*
+
+#### Inner Classes
+
+*In progress...*
 
 

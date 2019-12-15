@@ -1,4 +1,4 @@
-GenDocs+ v0.1-alpha (A fork of GenDocs v3.0-alpha003)
+GenDocs+ (A fork of GenDocs v3.0-alpha003)
 =====================================================
 
 Introduction
