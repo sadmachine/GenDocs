@@ -5,10 +5,11 @@
 #Include <Markdown2HTML>
 #Include <PrepExample>
 
-GenerateDocs(file, docs)
+
+GenerateDocs(file, destination, docs)
 {
-	SplitPath, file,, filedir,, name
-	docudir := filedir "\" name "-doc"
+	SplitPath, file,,,, name
+	docudir := destination "\" name "-doc"
 	IfNotExist, %docudir%\
 		FileCreateDir, %docudir%
 	
@@ -70,7 +71,7 @@ GenerateDocs(file, docs)
 			FileDelete, index.html
 		FileAppend, % filetext, index.html
 		
-		SetWorkingDir, %filedir%
+		SetWorkingDir, %destination%
 		global imglist
 		for k,img in imglist
 			FileCopy, %img%, %docudir%\%img%, 1

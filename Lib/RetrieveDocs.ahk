@@ -25,9 +25,16 @@ RetrieveDocs(file)
 					indent := SubStr(line, 1, InStr(line, "/*!")-1)
 					ReadChunk(file, o, indent)
 				}
-				if RegExMatch(tline, "i)^;!GenDocs-Import\s+(.+)$", tmp)
+				if RegExMatch(tline, "i)^#Include\s+<(.+)>\s+;!GenDocs-Import\s{0,}$", tmp)
 				{
-					IfNotExist, %tmp1%
+					libpath := A_WorkingDir "/Lib/" tmp1 ".ahk"
+					if !FileExist(libpath)
+						throw Exception("Library file does not exist or is in a non-local library!", 1, tmp1)
+					files.Insert(libpath)
+				}
+				if RegExMatch(tline, "i)^#Include\s+([^<>]+)\s+;!GenDocs-Import\s{0,}$", tmp)
+				{
+					if !FileExist(tmp1)
 						throw Exception("File does not exist!", 1, tmp1)
 					files.Insert(tmp1)
 				}

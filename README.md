@@ -6,10 +6,10 @@ Introduction
 
 GenDocs is a utility for easily creating documentation for AutoHotkey libraries. It was created by **fincs** and the original repository can be found [here](https://github.com/fincs/GenDocs). 
 
-GenDocs+ is a fork of GenDocs which will hopefully add some additional features to make documentation of AutoHotKey libraries even easier and more convenient. It is intended to expand on the great work done by **fincs**.
+GenDocs+ is a fork of GenDocs which will hopefully add some additional features to make documentation of AutoHotKey libraries even easier and more convenient. It is intended to expand on the great work done by **fincs**. 
 
-Original Features (by **fincs**)
---------------------------------
+Original Documentable Entities (by **fincs**)
+---------------------------------------------
 
 - Functions
 - Pages
@@ -19,17 +19,15 @@ Original Features (by **fincs**)
 	+ Properties
 	+ Inner classes
 
-Added Features (Ongoing)
-------------------------
+Changelog/Future Milestones (Ongoing)
+----------------------------------
 
-- [ ] Better documentation of syntax that GenDocs expects
-- [ ] Ability to parse specified `#Include`ed files 
-- [ ] Choice of destination folder for the generated documentation files
+See [changelog.md](/changelog.md)
 
 Syntax/Usage
 ------------
 
-For usage, see [/usage.md](/usage.md).
+For usage, see [usage.md](/usage.md).
 
 For a full syntax example, see [/Demo/TestLib.ahk](/Demo/TestLib.ahk) and the other files in `/Demo`.
 
