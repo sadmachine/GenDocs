@@ -12,6 +12,6 @@ Version 1.0.0 (Current)
 -------------
 
 - [ ] Better documentation of syntax that GenDocs expects within documentation comments
-- [ ] Easier to specify which included files should be parsed for documentation
-- [ ] Choice of destination folder for the generated documentation files
+- [x] Easier to specify which included files should be parsed for documentation [added: v0.5.0-alpha]
+- [x] Choice of destination folder for the generated documentation files [added: v0.5.0-alpha]
 - [ ] Better documentation within the GenDocs code
